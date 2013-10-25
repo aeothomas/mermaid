@@ -16,6 +16,7 @@ class Modifier {
 	 */
 	ModifierType type
 
+    static hasMany = [modifierOption: ModifierOption]
 	
     static constraints = {
     }

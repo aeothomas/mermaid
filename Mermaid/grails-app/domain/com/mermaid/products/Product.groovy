@@ -37,7 +37,7 @@ class Product {
 	 * Here, Product will have 0 or 1 product unit type. Enhance using a join table to save space
 	 * It will have a product unit type while the product pricing type is "sold by unit"
 	 * */
-	static hasMany = [productUnitType: ProductUnitType, inventoryItem: InventoryItem, rawGoodItem: RawGoodItem]
+	static hasMany = [productUnitType: ProductUnitType, inventoryItem: InventoryItem, rawGoodItem: RawGoodItem, addon : Modifier, noOption: Modifier, modifierGroup:Modifier ]
 
 	static constraints = {
 		name unique:true, nullable:false, blank:false
