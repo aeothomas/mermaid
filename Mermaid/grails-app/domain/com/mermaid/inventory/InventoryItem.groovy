@@ -3,6 +3,9 @@ package com.mermaid.inventory
 import com.mermaid.products.Product
 import com.mermaid.suppliers.Supplier
 
+/**
+ * The global inventory item which has a unique sku id
+ */
 class InventoryItem{
 	
 	/**
