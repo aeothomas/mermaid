@@ -9,8 +9,25 @@ import com.mermaid.store.Store
  */
 class Transaction {
 
+    /**
+     *  The unique order number
+     *
+     */
+    String transNum
+
+    /**
+     * The order number
+     */
+    String orderNum
+
+    /**
+     * The of transaction
+     */
     Date date
 
+    /**
+     *
+     */
     String storeCode
 
     String registerCode
@@ -21,7 +38,11 @@ class Transaction {
 
     double amount
 
-    PaymentType paymentType
+    Payment payment
+
+    double tax
+
+    OperationType operationType
 
     static constraints = {
     }
