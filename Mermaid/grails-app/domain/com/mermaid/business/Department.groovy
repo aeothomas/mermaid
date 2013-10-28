@@ -4,6 +4,7 @@ import com.mermaid.inventory.StoreInventory
 
 class Department {
 
+
     String name
 
     static constraints = {

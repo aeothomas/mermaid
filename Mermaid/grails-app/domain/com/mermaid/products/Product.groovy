@@ -39,6 +39,11 @@ class Product {
     Department department
 
     /**
+     * TODO Review required . Should it be StoreInventory or staying at the global level
+     */
+    double cost
+
+    /**
      * Here, Product will have 0 or 1 product unit type. Enhance using a join table to save space
      * It will have a product unit type while the product pricing type is "sold by unit"
      * */

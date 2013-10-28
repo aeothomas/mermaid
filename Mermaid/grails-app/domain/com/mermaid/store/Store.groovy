@@ -1,6 +1,6 @@
 package com.mermaid.store
 
-import com.mermaid.global.Address
+import com.mermaid.commons.Address
 
 /**
  * The store domain represents a store object

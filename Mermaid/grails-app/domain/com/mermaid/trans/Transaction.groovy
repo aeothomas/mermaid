@@ -1,7 +1,7 @@
 package com.mermaid.trans
 
 import com.mermaid.emp.Employee
-import com.mermaid.global.PaymentType
+
 import com.mermaid.store.Store
 
 /**

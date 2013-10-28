@@ -1,17 +1,25 @@
-package com.mermaid.global
+package com.mermaid.commons
 
+import com.mermaid.global.Country
+
+/**
+ * The address
+ */
 class Address {
+
 	String houseNumber;
+
 	String addressLine1;
+
 	String addressLine2;
-	
-	/**
-	 * TODO Normalise the province and country
-	 */
+
+    String addressLine3;
+
 	String province;
-	String country;
+
+	Country country;
+
 	String postCode
-	
 	
     static constraints = {
     }

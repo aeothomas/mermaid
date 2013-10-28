@@ -23,18 +23,14 @@ class InventoryItem{
 	 */
 	boolean isTracked
 	
-	/**
+	/*
 	 * It's the global price for the inventory Item
 	 */
 	double price
 	
-	/**
-	 * TODO Review required . Should it be StoreInventory or staying at the global level
-	 */
-	double cost
-	
 	static hasMany = [globalSupplier: Supplier]
-	
+
+
 	/**
 	 * The IventoryItem is 1-to-many related with Product Entity. One Product can possible have multiple InventoryItem
 	 */

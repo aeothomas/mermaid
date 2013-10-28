@@ -1,6 +1,6 @@
 package com.mermaid.suppliers
 
-import com.mermaid.global.Address
+import com.mermaid.commons.Address
 import com.mermaid.inventory.InventoryItem
 import com.mermaid.inventory.StoreInventory
 import com.mermaid.inventory.RawGoodItem
