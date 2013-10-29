@@ -1,7 +1,6 @@
 package com.mermaid.products
 
 import com.mermaid.business.Department
-import com.mermaid.global.Unit
 import com.mermaid.inventory.InventoryItem
 import com.mermaid.inventory.RawGoodItem
 
@@ -44,6 +43,9 @@ class Product {
      */
     double cost
 
+    /**
+     * TODO Review productUnitType
+     */
     static hasMany = [productUnitType: ProductUnitType,
             inventoryItem: InventoryItem,
             rawGoodItem: RawGoodItem,

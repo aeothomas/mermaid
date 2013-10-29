@@ -1,7 +1,6 @@
 package com.mermaid.inventory
 
 
-import com.mermaid.global.Unit
 import com.mermaid.products.Product;
 import com.mermaid.suppliers.Supplier
 
@@ -29,11 +28,7 @@ class RawGoodItem {
 	 * Quantity of the raw good on hand
 	 */
 	long quantity
-	
-	/**
-	 * Measurement unit of the raw good
-	 */
-	Unit unit
+
 	
 	/**
 	 * The suppliers
