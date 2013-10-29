@@ -7,7 +7,7 @@ class OperationType {
      */
     String name
 
-    int typeCode
+    int type
 
     static constraints = {
     }

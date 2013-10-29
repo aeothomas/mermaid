@@ -37,6 +37,6 @@ class InventoryItem{
 	static belongsTo =  Product
 	
     static constraints = {
-		sku unique: true, nullable:false, blank:false
+		sku unique: true, blank:false
     }
 }

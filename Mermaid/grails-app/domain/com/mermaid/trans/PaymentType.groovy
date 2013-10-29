@@ -6,7 +6,9 @@ package com.mermaid.trans
 class PaymentType {
     String name
 
-    int typeCode
+    int type
+
+
     static constraints = {
     }
 }

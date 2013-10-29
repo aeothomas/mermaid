@@ -1,6 +1,7 @@
 package com.mermaid.products
 
 import com.mermaid.business.Department
+import com.mermaid.global.Unit
 import com.mermaid.inventory.InventoryItem
 import com.mermaid.inventory.RawGoodItem
 
@@ -15,7 +16,7 @@ class Product {
     /**
      * The product's name
      */
-    static hasMany = [productUnitType: ProductUnitType, inventoryItem: InventoryItem, rawGoodItem: RawGoodItem, modifiers: Modifier, addon: Modifier, excludeOptions: Modifier]
+
     String name
     /**
      * The description of a product
@@ -43,14 +44,22 @@ class Product {
      */
     double cost
 
+    static hasMany = [productUnitType: ProductUnitType,
+            inventoryItem: InventoryItem,
+            rawGoodItem: RawGoodItem,
+            modifiers: Modifier,
+            addon: AddOn,
+            excludeOptions: AddOn]
+
     /**
      * Here, Product will have 0 or 1 product unit type. Enhance using a join table to save space
      * It will have a product unit type while the product pricing type is "sold by unit"
      * */
     static constraints = {
-        name unique: true, nullable: false, blank: false
-        category nullable: false, blank: false
-        pricingType nullable: false, blank: false
+        name unique: true, blank: false
+        category blank: false
+        pricingType blank: false
+
     }
     static mapping = {
 

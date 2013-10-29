@@ -1,20 +1,19 @@
 package com.mermaid.products
 
 /**
- * The addon can be added on the product one the sales
+ *
+ * The modifier normally is used to put attributes to a same product. for example: size
+ *
+ * One product can have more than one modifier group
+ *
  * @author wshao
  *
  */
 class Modifier {	
 	/**
-	 * Addon Name
+	 * Modifier Name
 	 */
 	String name
-	
-	/**
-	 * Addon Type
-	 */
-	ModifierType type
 
     static hasMany = [modifierOption: ModifierOption]
 	

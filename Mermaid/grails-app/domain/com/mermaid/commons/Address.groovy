@@ -22,5 +22,6 @@ class Address {
 	String postCode
 	
     static constraints = {
+
     }
 }

@@ -9,6 +9,11 @@ class ModifierOption {
 
     double price
 
+    /**
+     * This indicates the product will sale with this option as default.
+     */
+    boolean isBase
+
     static belongsTo = [modifier:Modifier]
 
     static constraints = {

@@ -44,5 +44,6 @@ class RawGoodItem {
 
 	
     static constraints = {
+        name blank:false
     }
 }
