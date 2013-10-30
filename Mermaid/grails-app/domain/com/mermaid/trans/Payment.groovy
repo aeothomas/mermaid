@@ -2,8 +2,9 @@ package com.mermaid.trans
 
 class Payment {
 
-    String paymentNumber
+    String paymentNum
 
+    PaymentType paymentType
 
     static constraints = {
     }
