@@ -5,7 +5,9 @@ import com.mermaid.inventory.InventoryItem
 import com.mermaid.inventory.StoreInventory
 import com.mermaid.inventory.RawGoodItem
 
-
+/**
+ * The Supplier domain
+ */
 class Supplier {
 	
 	/**
