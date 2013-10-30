@@ -31,5 +31,7 @@ class Supplier {
 	static belongsTo = [RawGoodItem, InventoryItem, StoreInventory]
 	
     static constraints = {
+       code unique: true, blank: false
+       name blank: false
     }
 }

@@ -22,5 +22,7 @@ class Store {
 	Address address 
 	
     static constraints = {
+        storeName blank:false
+        storeCode unique: true, blank:false
     }
 }
