@@ -9,6 +9,6 @@ class Department {
     long code
 
     static constraints = {
-        code unique:true, blank:falses
+        code unique:true, blank:false
     }
 }
