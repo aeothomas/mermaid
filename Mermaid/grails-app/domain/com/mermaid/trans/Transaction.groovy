@@ -1,7 +1,7 @@
 package com.mermaid.trans
 
 import com.mermaid.emp.Employee
-
+import com.mermaid.reg.Register
 import com.mermaid.store.Store
 
 /**
@@ -46,6 +46,11 @@ class Transaction {
      * Store
      */
     Store store
+
+    /**
+     * The register used in this transaction
+     */
+    Register register
 
     /**
      * Amount of the transaction in total

@@ -1,19 +1,17 @@
 package com.mermaid.trans
 
+import com.mermaid.inventory.InventoryItem
+
 /**
  * The line item
  */
 class LineItem {
 
-    /**
-     * The name of the item
-     */
-    String name
 
     /**
-     * The unique number of sku
+     * Inventory Item
      */
-    String sku
+    InventoryItem inventoryItem
 
     /**
      * The number of quality orded
@@ -29,5 +27,6 @@ class LineItem {
     static belongsTo = [transaction: Transaction]
 
     static constraints = {
+        inventoryItem blank : false
     }
 }
